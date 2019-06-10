@@ -18,4 +18,4 @@ Route::get('/', 'HomeController@index')->name('home');
 // Auth::routes();
 
 // Redirects
-Route::get('/', function () { return view('welcome'); });
+Route::get('/home', function () { return redirect('/'); });
