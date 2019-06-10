@@ -11,10 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Home page
+Route::get('/', 'HomeController@index')->name('home');
 
-Auth::routes();
+// Default routes for Laravel auth
+// Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+// Redirects
+Route::get('/', function () { return view('welcome'); });
