@@ -34,10 +34,7 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link {{ activeItem('/') }}" href="{{ route('home') }}">Homepage</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="">Seznam vozidel</a>
+                            <a class="nav-link {{ activeItem('/') }}" href="{{ route('home') }}">Seznam vozidel</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="">Porovnat vozidla</a>
